@@ -59,7 +59,7 @@ vector<int> sub(vector<int> &a, vector<int> &b)
 	
 	for(i = 0; i < n; i++)
 		diff[i] = a[i];
-	for(i = 0; i < m ;i++)
+	for(i = 0; i < m; i++)
 		diff[i] -= b[i];
 	
 	return diff;
@@ -73,7 +73,7 @@ vector<int> polynomial_multiply(vector<int> &a, vector<int> &b)
 	vector<int> product(m+n-1);
 	
 	for(i = 0; i < n; i++)
-		for(j = 0; j < m;j++)
+		for(j = 0; j < m; j++)
 			product[i+j] += (a[i]*b[j]);
 	
 	return product;
